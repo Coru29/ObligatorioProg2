@@ -23,9 +23,12 @@ public class Menu {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Ingrese el mes y año (en formato MM-YYYY):");
-                    String mesAno = scanner.next();
-                    // la función para listar los pilotos más mencionados
+                    System.out.println("Ingrese el mes (MM):");
+                    int mes = scanner.nextInt();
+                    System.out.println("Ingrese el año (YYYY):");
+                    int ano = scanner.nextInt();
+                    //la función para ver la lista de 10 pilotos más mencionados
+
                     break;
                 case 2:
                     // la función para mostrar el top de usuarios con más tweets
@@ -56,6 +59,8 @@ public class Menu {
             }
         }
     }
+
+
 
     public static void main(String[] args){
         Menu elMenu = new Menu();
